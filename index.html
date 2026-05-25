@@ -468,12 +468,12 @@
     const claimBtn = document.getElementById('claimBtn');
 
     const labels = [
-      'Jan/Fev',
-      'Mar/Abr',
-      'Mai/Jun',
-      'Jul/Ago',
-      'Set/Out',
-      'Nov/Dez'
+      'Carregando...',
+      'Carregando...',
+      'Carregando...',
+      'Carregando...',
+      'Carregando...',
+      'Carregando...'
     ];
 
     let currentIndex = 0;
@@ -504,7 +504,7 @@
       if (currentIndex < totalSteps - 2) {
         progressText.textContent = 'Carregando ' + labels[currentIndex + 1] + '…';
       } else if (currentIndex === totalSteps - 2) {
-        progressText.textContent = 'Carregando último período (Nov/Dez)…';
+        progressText.textContent = 'Carregando último período…';
       } else {
         // Quando termina tudo: deixa 11/12 verde como os outros
         const lastItem = monthItems[totalSteps - 1];
